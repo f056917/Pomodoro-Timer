@@ -31,9 +31,6 @@ npx serve .
 
 然后访问 `http://localhost:8080`。
 
-### 方式三：在线预览
-
-将项目推送到 GitHub，开启 GitHub Pages 即可获得在线地址。
 
 ## 快捷键 / 技巧
 
