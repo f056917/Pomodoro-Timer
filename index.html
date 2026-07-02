@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer - 番茄钟</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍅</text></svg>">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🍅 Pomodoro Timer</h1>
+
+    <div class="timer-ring">
+      <svg viewBox="0 0 200 200" class="progress-svg">
+        <circle class="progress-bg" cx="100" cy="100" r="90" />
+        <circle class="progress-fill" cx="100" cy="100" r="90" id="progressCircle" />
+      </svg>
+      <div class="timer-display">
+        <span class="time-text" id="timeDisplay">25:00</span>
+        <span class="session-label" id="sessionLabel">专注</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="btn btn-primary" id="btnStart">开始</button>
+      <button class="btn btn-secondary" id="btnPause" disabled>暂停</button>
+      <button class="btn btn-danger" id="btnReset">重置</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-value" id="roundCount">0</span>
+        <span class="stat-label">完成轮数</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value" id="totalFocus">0m</span>
+        <span class="stat-label">总专注时间</span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>双击计时器可切换工作/休息时长 | MIT License</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
